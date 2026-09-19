@@ -1,0 +1,56 @@
+<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Solutions</title></head><body>
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 20px; }
+button { font-size: 14px; cursor: pointer; }
+img { object-fit: cover; }
+.section { margin-bottom: 40px; }
+h1 { margin-bottom: 8px; }
+
+<style>
+.profile { width:560px;display:flex;align-items:center;gap:18px;padding:12px; }
+.profile img { width:70px;height:70px;border-radius:50%; }
+.profile-info { flex:1; }
+.profile-info h3,.profile-info p { margin:3px 0; }
+.profile-info h3 { font-size:20px; }
+.profile-info p { color:#888; }
+.follow { background:#3478e5;color:white;border:0;border-radius:5px;padding:12px 20px;font-weight:bold; }
+.row { display:flex;gap:15px; }
+.card { width:190px;border:1px solid #ddd;box-shadow:0 1px 5px #bbb; }
+.card img { width:100%;height:170px;display:block; }
+.card .info { padding:10px; }
+.card h3 { margin:0 0 7px; }
+.card p { margin:0 0 10px;color:#666; }
+.video { width:760px;display:flex;gap:12px;margin:12px 0; }
+.video img { width:260px;height:145px; }
+.video-info { flex:1; }
+.video-info h3 { margin:0 0 8px; }
+.video-info p { color:#666;margin:6px 0; }
+</style>
+<h1>Lesson 10 Solutions</h1>
+
+<h2>10a / 10b: Profile layout</h2>
+<div class="profile">
+  <img src="cat.jpg">
+  <div class="profile-info"><h3>Oliver</h3><p>The cat</p><p>Popular</p></div>
+  <button class="follow">Follow</button>
+</div>
+
+<h2>10b: Three profiles</h2>
+<div>
+  <div class="profile"><img src="cat.jpg"><div class="profile-info"><h3>Oliver</h3><p>The cat</p><p>Popular</p></div><button class="follow">Follow</button></div>
+  <div class="profile"><img src="cat2.jpg"><div class="profile-info"><h3>Mimi</h3><p>Sleepy Cat</p><p>Popular</p></div><button class="follow">Follow</button></div>
+  <div class="profile"><img src="dog.jpg"><div class="profile-info"><h3>Rex</h3><p>Happy Bulldog</p><p>Popular</p></div><button class="follow">Follow</button></div>
+</div>
+
+<h2>10c: Video layout</h2>
+<div class="video"><img src="dog2.jpg"><div class="video-info"><h3>How to compete against CS degrees (as a self-taught dev)</h3><p>SuperSimpleDev</p><p>1.5K views · 4 months ago</p></div></div>
+<div class="video"><img src="dog2.jpg"><div class="video-info"><h3>Which programming language to learn first 2022 (with charts)</h3><p>SuperSimpleDev</p><p>5.7K views · 11 months ago</p></div></div>
+<div class="video"><img src="dog2.jpg"><div class="video-info"><h3>Frontend web development - a complete overview</h3><p>SuperSimpleDev</p><p>1K views · 4 months ago</p></div></div>
+
+<h2>10d / 10e: Cards</h2>
+<div class="row">
+  <div class="card"><img src="cat.jpg"><div class="info"><h3>Oliver</h3><p>🧑 2 mutual friends</p><button class="follow">Add Friend</button></div></div>
+  <div class="card"><img src="cat2.jpg"><div class="info"><h3>Mimi</h3><p>🧑 3 mutual friends</p><button class="follow">Add Friend</button></div></div>
+  <div class="card"><img src="dog.jpg"><div class="info"><h3>Rex</h3><p>🧑 4 mutual friends</p><button class="follow">Add Friend</button></div></div>
+</div>
+</body></html>

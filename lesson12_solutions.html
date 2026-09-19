@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Solutions</title></head><body>
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 20px; }
+button { font-size: 14px; cursor: pointer; }
+img { object-fit: cover; }
+.section { margin-bottom: 40px; }
+h1 { margin-bottom: 8px; }
+
+<style>
+.flex12a { display:flex; }
+.flex12a div:first-child { width:200px;background:#b9dce8;padding:10px; }
+.flex12a div:last-child { width:75px;background:#efb3bd;padding:10px; }
+.flex12b { display:flex; }
+.flex12b div:nth-child(1){width:50px;background:#b9dce8;padding:10px;}
+.flex12b div:nth-child(2){flex:1;background:#efb3bd;padding:10px;}
+.flex12b div:nth-child(3){width:75px;background:#b9dce8;padding:10px;}
+.flex12c { display:flex;justify-content:space-between; }
+.flex12c div { background:#efb3bd;padding:10px; }
+.flex12d { height:50px;border:1px solid #999;display:flex;align-items:center;justify-content:space-between;padding:0 10px; }
+.nav12e { width:440px;border:1px solid #ccc;border-radius:7px;padding:10px; }
+.nav-row { display:flex;justify-content:space-between;align-items:center;padding:6px; }
+.badge { background:#4169e1;color:white;border-radius:20px;padding:7px 13px; }
+.nav12f { height:60px;background:#7651b5;display:flex;align-items:center;padding:10px 18px;color:white;gap:25px; }
+.nav12f input { flex:1;border:0;border-radius:25px;padding:10px 20px; }
+.download { border:1px solid white;color:white;background:transparent;padding:8px 18px; }
+.people12g { width:600px; }
+.person { display:flex;align-items:center;gap:15px;padding:8px; }
+.person img { width:60px;height:60px;border-radius:50%; }
+.person-info { flex:1; }
+.person-info h3,.person-info p { margin:2px 0; }
+.person-info p { color:#888; }
+.follow { background:#3478e5;color:white;border:0;border-radius:5px;padding:12px 20px;font-weight:bold; }
+</style>
+<h1>Lesson 12 Solutions</h1>
+
+<h2>12a</h2><div class="flex12a"><div>200px</div><div>75px</div></div>
+
+<h2>12b</h2><div class="flex12b"><div>item1</div><div>item2</div><div>item3</div></div>
+
+<h2>12c</h2><div class="flex12c"><div>item1</div><div>item2</div><div>item3</div><div>item4</div></div>
+
+<h2>12d</h2><div class="flex12d"><div>item1</div><div>item2</div></div>
+
+<h2>12e</h2>
+<div class="nav12e">
+<div class="nav-row"><span>Home</span><span class="badge">14</span></div>
+<div class="nav-row"><span>Notifications</span><span class="badge">3</span></div>
+<div class="nav-row"><span>Messages</span><span class="badge">5</span></div>
+</div>
+
+<h2>12f</h2>
+<div class="nav12f"><b>Home</b><input placeholder="Search"><button class="download">Download</button></div>
+
+<h2>12g</h2>
+<div class="people12g">
+<div class="person"><img src="cat.jpg"><div class="person-info"><h3>Oliver</h3><p>The cat</p><p>Popular</p></div><button class="follow">Follow</button></div>
+<div class="person"><img src="cat2.jpg"><div class="person-info"><h3>Mimi</h3><p>Sleepy Cat</p><p>Popular</p></div><button class="follow">Follow</button></div>
+<div class="person"><img src="dog.jpg"><div class="person-info"><h3>Rex</h3><p>Happy Bulldog</p><p>Popular</p></div><button class="follow">Follow</button></div>
+</div>
+</body></html>

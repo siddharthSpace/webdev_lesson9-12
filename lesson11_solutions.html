@@ -1,0 +1,44 @@
+<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Solutions</title></head><body>
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 20px; }
+button { font-size: 14px; cursor: pointer; }
+img { object-fit: cover; }
+.section { margin-bottom: 40px; }
+h1 { margin-bottom: 8px; }
+
+<style>
+.grid-11a { display:grid;grid-template-columns:200px 75px; }
+.grid-11a div:nth-child(1),.grid-11b div:nth-child(1),.grid-11b div:nth-child(3),.grid-11c div { background:#b9dce8;padding:10px; }
+.grid-11a div:nth-child(2),.grid-11b div:nth-child(2),.grid-11c div { background:#efb3bd;padding:10px; }
+.grid-11b { display:grid;grid-template-columns:50px 1fr 75px; }
+.grid-11c { display:grid;grid-template-columns:repeat(4,1fr);column-gap:20px;row-gap:10px; }
+.grid-11c div { min-height:35px; }
+.cards-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:center;max-width:660px; }
+.card { border:1px solid #ddd;box-shadow:0 1px 5px #bbb; }
+.card img { width:100%;height:200px;display:block;object-fit:cover; }
+.card .info { padding:10px; }
+.card h3 { margin:0 0 7px; }
+.card p { margin:0 0 10px;color:#666; }
+.card button { background:#3478e5;color:white;border:0;padding:10px 16px;border-radius:4px; }
+</style>
+<h1>Lesson 11 Solutions</h1>
+
+<h2>11a</h2>
+<div class="grid-11a"><div>200px</div><div>75px</div></div>
+
+<h2>11b</h2>
+<div class="grid-11b"><div>col1</div><div>col2</div><div>col3</div></div>
+
+<h2>11c</h2>
+<div class="grid-11c">
+<div>col1</div><div>col2</div><div>col3</div><div>col4</div>
+<div>col1</div><div>col2</div><div>col3</div><div>col4</div>
+</div>
+
+<h2>11d</h2>
+<div class="cards-grid">
+<div class="card"><img src="cat.jpg"><div class="info"><h3>Oliver</h3><p>🧑 2 mutual friends</p><button>Add Friend</button></div></div>
+<div class="card"><img src="cat2.jpg"><div class="info"><h3>Mimi</h3><p>🧑 3 mutual friends</p><button>Add Friend</button></div></div>
+<div class="card"><img src="dog.jpg"><div class="info"><h3>Rex</h3><p>🧑 4 mutual friends</p><button>Add Friend</button></div></div>
+</div>
+</body></html>
